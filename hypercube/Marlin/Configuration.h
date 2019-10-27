@@ -395,9 +395,9 @@
   //#define DEFAULT_Kd 440
 
 // M303 E0 C8 S210
-#define DEFAULT_Kp 21.93
-#define DEFAULT_Ki 1.47
-#define DEFAULT_Kd 81.73
+#define DEFAULT_Kp 24.21
+#define DEFAULT_Ki 1.49
+#define DEFAULT_Kd 98.17
 
 #endif // PIDTEMP
 
@@ -802,7 +802,7 @@
 // The number of probes to perform at each point.
 //   Set to 2 for a fast/slow probe, using the second probe result.
 //   Set to 3 or more for slow probes, averaging the results.
-#define MULTIPLE_PROBING 3
+#define MULTIPLE_PROBING 2
 
 /**
  * Z probes require clearance when deploying, stowing, and moving between
@@ -1027,7 +1027,7 @@
 #if ENABLED(AUTO_BED_LEVELING_LINEAR) || ENABLED(AUTO_BED_LEVELING_BILINEAR)
 
   // Set the number of grid points per dimension.
-  #define GRID_MAX_POINTS_X 4
+  #define GRID_MAX_POINTS_X 3
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Set the boundaries for probing (where the probe can reach).
